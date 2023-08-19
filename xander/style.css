@@ -1,0 +1,28 @@
+html body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+body {
+  background-color: rgb(163, 248, 184);
+}
+
+.title {
+  color: rgb(231, 231, 231);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.image-title-container {
+  display: inline-block;
+}

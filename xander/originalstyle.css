@@ -1,0 +1,43 @@
+/*
+../style.css but modified to fit xander/index.html
+*/
+.images-container {
+  max-width: 400px;
+  height: 425px;
+  margin: 0 auto;
+  display: flex;
+  border: 2px solid #222;
+}
+
+.images-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 400ms;
+}
+
+.images-container .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.images-container .description {
+  position: absolute;
+  bottom: 0;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 400ms;
+  width: 100%;
+}
+
+.images-container .image:hover .description {
+  opacity: 1;
+  bottom: 0;
+}
+
+.images-container .image:hover img {
+  transform: scale(1.1);
+}

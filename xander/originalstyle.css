@@ -2,7 +2,7 @@
 ../style.css but modified to fit xander/index.html
 */
 .images-container {
-  max-width: 400px;
+  max-width: 800px;
   height: 425px;
   margin: 0 auto;
   display: flex;

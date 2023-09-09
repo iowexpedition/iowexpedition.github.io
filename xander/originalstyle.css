@@ -41,3 +41,44 @@
 .images-container .image:hover img {
   transform: scale(1.1);
 }
+
+.images-container-route {
+  width:fit-content;
+  height:fit-content;
+  margin: 0 auto;
+  display: flex;
+  border: 2px solid #222;
+}
+
+.images-container-route img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 400ms;
+}
+
+.images-container-route .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.images-container-route .description {
+  position: absolute;
+  bottom: 0;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 400ms;
+  width: 100%;
+}
+
+.images-container-route .image:hover .description {
+  opacity: 1;
+  bottom: 0;
+}
+
+.images-container-route .image:hover img {
+  transform: scale(1.1);
+}
